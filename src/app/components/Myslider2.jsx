@@ -48,8 +48,8 @@ const Myslider2 = () => {
                         // style={{ height: 600 }}
                     >
                         {clientscard.map((data, index) => (
-                            <SwiperSlide>
-                                <div key={index}>
+                            <SwiperSlide key={index}>
+                                <div>
                                     <div className='mx-8 md:mx-16 lg:w-[820px] mt-20 md:h-[270px] lg:mx-auto pt-12 p-4 md:p-[58px_50px_32px] shadow-[0px_2px_48px_0px#00000014] relative'>
                                         <p className='font-poppins font-normal text-center max-w-[630px] mx-auto text-sm md:text-base opacity-70'>Nec pellentesque aliquet diam eget sed mi ornare vulputate duis. Posuere id habitasse quis ac ac. Pellentesque eget sed ut tincidunt cras. Ipsum nec placerat vitae orci. Accumsan amet commodo montes, aenean velit gravida tristique montes. Porttitor velit cras venenatis, amet curabitur ultricies ac dictum. </p>
                                         <h2 className='font-poppins font-semibold text-sm md:text-base text-center pt-1 md:pt-4'>{data.head}</h2>

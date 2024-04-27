@@ -1,6 +1,5 @@
 "use client"
 import React from 'react'
-import Image from 'next/image'
 
 export default function Backtotop() {
     const [position, setPosition] = React.useState({ top: 0, left: 0 })
@@ -25,7 +24,7 @@ export default function Backtotop() {
                 <div onClick={() => setPosition({ ...position, position: { top: 0, left: 0 } })} className="fixed hidden bottom-[1%] right-[1%] z-10 translate-y-[0%] animate-bounce"
                     ref={scrollTop}
                 >
-                    <Image src="/assets/images/btn.png" alt="" className='w-[55px] cursor-pointer h-[55px] rounded-3xl  ' />
+                    <img src="/assets/images/btn.png" alt="" className='w-[55px] cursor-pointer h-[55px] rounded-3xl ' />
                 </div>
             </div>
         </>

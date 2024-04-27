@@ -46,7 +46,7 @@ const Analysis = () => {
                     <div className='lg:w-5/12 w-full flex items-center justify-center lg:justify-start'>
                         <div>
                             <h3 className='font-helv text-[29px] font-normal text-center lg:text-start leading-[32px] md:leading-[62px]' data-aos="fade-up-right">THE FOUR PHASES OF</h3>
-                            <h2 className='text-[40px] sm:text-[48px] md:text-[52px] font-normal font-helv leading-[42px] md:leading-[62px]  text-center lg:text-start' data-aos="fade-up-right">SEPARATION 
+                            <h2 className='text-[40px] sm:text-[48px] md:text-[52px] font-normal font-helv leading-[42px] md:leading-[62px]  text-center lg:text-start' data-aos="fade-up-right">SEPARATION
                                 <span className='text-[#F77B0B]'> MINDSET</span></h2>
                             <p className='font-normal font-poppins text-sm sm:text-base text-black opacity-70 leading-5 sm:leading-6 lg:pt-2  text-center lg:text-start' data-aos="fade-up-right">There are 4 typical separation phases. The 4 phases are not always clearly separated from each other and can overlap.</p>
                             <Button name='!mt-3 !sm:mt-4 lg:!mt-9 !mx-auto lg:!mx-0' data-aos="fade-up-right" />
@@ -61,14 +61,12 @@ const Analysis = () => {
                             modules={[EffectFlip, Pagination, Navigation]}
                         >
                             {slidercard.map((data, index) => (
-                                <SwiperSlide>
-                                    <div>
-                                        <div key={index} className='mx-auto sm:mx-10 md:mx-24 lg:mx-0 lg:w-full h-[320px] p-6 sm:h-[448px] bg-[#003E92] flex flex-col justify-center items-center relative z-10 overflow-hidden'>
-                                            <p className='text-base sm:text-lg font-poppins font-semibold text-white capitalize text-center'>{data.heading}</p>
-                                            <p className='text-base sm:text-lg font-poppins font-semibold text-white capitalize text-center'>{data.head}</p>
-                                            <p className='font-normal text-sm sm:text-base font-poppins text-white sm:max-w-[364px] text-center sm:pt-3'>{data.para}</p>
-                                            <Image src="/assets/images/sliderellipse.png" alt="sliderellipse" className='absolute bottom-0 right-0 z-[-1]' />
-                                        </div>
+                                <SwiperSlide key={index}>
+                                    <div className='mx-auto sm:mx-10 md:mx-24 lg:mx-0 lg:w-full h-[320px] p-6 sm:h-[448px] bg-[#003E92] flex flex-col justify-center items-center relative z-10 overflow-hidden'>
+                                        <p className='text-base sm:text-lg font-poppins font-semibold text-white capitalize text-center'>{data.heading}</p>
+                                        <p className='text-base sm:text-lg font-poppins font-semibold text-white capitalize text-center'>{data.head}</p>
+                                        <p className='font-normal text-sm sm:text-base font-poppins text-white sm:max-w-[364px] text-center sm:pt-3'>{data.para}</p>
+                                        <Image src="/assets/images/sliderellipse.png" alt="sliderellipse" className='absolute bottom-0 right-0 z-[-1]' width={382} height={249} />
                                     </div>
                                 </SwiperSlide>
                             ))}
