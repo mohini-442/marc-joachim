@@ -1,7 +1,6 @@
 import { myarray } from "../common/Helper"
 import CardPrints from "./CardPrints"
 import Image from "next/image";
-import buttonsvg from '../../../public/assets/svg/buttonsvg.svg'
 import Button from "./Button";
 
 export default function Fault() {
@@ -32,12 +31,12 @@ export default function Fault() {
                     </div>
                     <div className="flex flex-wrap mx-auto justify-center ps-5">
                         <div data-aos="fade-up-right">
-                            <h2 className="font-normal text-[40px] md:text-[50px] lg:text-[60px] font-helv mb-0 leading-[47px] lg:leading-[72px] text-center sm:text-start">IT'S NOT</h2>
+                            <h2 className="font-normal text-[40px] md:text-[50px] lg:text-[60px] font-helv mb-0 leading-[47px] lg:leading-[72px] text-center sm:text-start">IT&apos;S NOT</h2>
                             <h2 className="font-normal text-[40px] md:text-[50px] lg:text-[60px] font-helv sm:ps-20 leading-[47px] lg:leading-[72px]"><span className="text-[#F77B0B]">YOUR</span> FAULT!</h2>
                         </div>
                         <div className="sm:ps-14 pt-4" data-aos="fade-up-left">
                             <div className='relative after:bg-[#9800B0]  after:w-[1.7px] after:h-full after:absolute after:top-0 after:start-0 ps-3'>
-                                <p className="font-poppins text-sm md:text-[16px] font-normal max-w-[255px] leading-[25px]">It's not your fault for not knowing how to let go of the partner who no longer made you feel special.</p>
+                                <p className="font-poppins text-sm md:text-[16px] font-normal max-w-[255px] leading-[25px]">It&apos;s not your fault for not knowing how to let go of the partner who no longer made you feel special.</p>
                             </div>
                         </div>
                     </div>
@@ -61,7 +60,6 @@ export default function Fault() {
                 </div>
                 <div className="px-3">
                     <p data-aos="fade-up-right" className="font-poppins text-base font-normal  pt-5 lg:pt-12 text-center pb-3 md:pb-5">You are not alone! Numerous women before you stood exactly at this point, where you are now.</p>
-
                     <Button name='!mx-auto'/>
                 </div>
                 <Image src='/assets/images/faultellipse.png' alt="faultellipse" width={409} height={297} className="absolute top-[7%] right-0 z-[-1] w-[12%] hidden lg:block"></Image>

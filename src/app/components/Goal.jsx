@@ -34,7 +34,7 @@ const Goal = () => {
                                     <p className='font-poppins text-sm sm:text-base font-normal text-white capitalize sm:max-w-[280px]'>You have separated and have the feeling that you can never be happy again and that you will be alone forever.</p>
                                 </div>
                                 <div className='xxs:w-[382px] sm:h-[187px] bg-[#FFFFFF1F] p-5 sm:p-[40px] border border-[#FFFFFF26] mt-4 sm:mt-8 mx-auto lg:mx-0' data-aos="fade-up-right">
-                                    <p className='font-poppins text-sm sm:text-base font-normal text-white capitalize sm:max-w-[280px]'>How are you supposed to be able to let go of someone who is so entangled with your life? It's impossible, isn't it?</p>
+                                    <p className='font-poppins text-sm sm:text-base font-normal text-white capitalize sm:max-w-[280px]'>How are you supposed to be able to let go of someone who is so entangled with your life? It&apos;s impossible, isn&apos;t it?</p>
                                 </div>
                             </div>
                             <div className='lg:w-1/2 w-full block lg:hidden'>

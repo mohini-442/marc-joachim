@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Mail, Twitter } from "./Icons"
+import Image from "next/image"
 
 const Myfooter = () => {
     return (
@@ -6,7 +7,7 @@ const Myfooter = () => {
             <div className="max-w-[1140px] px-3 mx-auto relative">
                 <div className="flex justify-center">
                     <div >
-                        <a href=""><img src="/assets/svg/footerlogo.svg" alt="footerlogo" className="cursor-pointer mx-auto" data-aos="fade-up" height={90} width={240} /></a>
+                        <a href=""><Image src="/assets/svg/footerlogo.svg" alt="footerlogo" className="cursor-pointer mx-auto" data-aos="fade-up" height={90} width={240} /></a>
                         <p className="font-poppins font-normal text-base text-white lg:max-w-[264px] text-center md:pt-4" data-aos="fade-up">(c)2024 MARC JOACHIM HUBRICH
                             All Rights Reserved</p>
                     </div>
