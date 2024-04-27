@@ -2,32 +2,144 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+
+@font-face {
+  font-family: 'helvlight';
+  src: url(/helvlight/HELN.TTF);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+
+@layer components {
+  .mobileView {
+    @apply max-lg:bg-[#003E92] z-20 max-lg:gap-5 max-lg:fixed max-lg:items-center max-lg:justify-center max-lg:flex-col max-lg:top-0 max-lg:w-full max-lg:h-full duration-300
+  }
+
+  .navhover {
+    @apply after:absolute relative hover:after:left-[0] after:bottom-[-2px] after:w-0 after:left-[50%] after:rounded-[10px] after:h-[3px] after:bg-[#02CDCF] hover:after:w-full after:duration-300
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.swiper-pagination-bullet {
+  background: var(--swiper-pagination-bullet-inactive-color, #fff) !important;
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: 0% !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: var(--swiper-navigation-top-offset, 50%) !important;
+  color: white !important;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  color: #9800B0 !important;
+  opacity: 1 !important;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: var(--swiper-navigation-sides-offset, 0%) !important;
+}
+
+
+
+#clientcard .swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 12px)) !important;
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 12px)) !important;
+}
+
+#clientcard .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: var(--swiper-pagination-bullet-vertical-gap, 12px) 0 !important;
+}
+
+#clientcard .swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 0.5) !important;
+  background: var(--swiper-pagination-color, #fff);
+}
+
+#clientcard .swiper-pagination-bullet {
+  background: var(--swiper-pagination-bullet-inactive-color, #003E92) !important;
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
+}
+
+#clientcard .swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1) !important;
+
+}
+
+
+
+@keyframes text-writing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.animate-text-writing {
+  animation: text-writing 1.5s steps(40, end) forwards;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.phone-icon {
+  transition: transform 0.3s;
+}
+
+.phone-icon:hover {
+  animation: vibrate 0.3s infinite alternate;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(3px);
+  }
+}
+
+@media (min-width:576px) {
+
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    left: 84% !important;
+  }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, 12%) !important;
+  }
+}
+
+@media (min-width:1102px) {
+  .bg-size {
+    background-size: 100% 100%;
+  }
+
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, -7%) !important;
+  }
+
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    left: 3% !important;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: var(--swiper-navigation-top-offset, 90%) !important;
+    color: white !important;
   }
 }
