@@ -44,7 +44,7 @@ const Aboutus = () => {
                     </div>
                 </div>
             </div>
-            <img src="/assets/images/wave.png" alt="wave" height={211} width={738} className=' absolute bottom-[3%] right-[0%] z-[-1] hidden lg:block' />
+            <Image src="/assets/images/wave.png" alt="wave" height={211} width={738} className=' absolute bottom-[3%] right-[0%] z-[-1] hidden lg:block' />
         </div>
     )
 }

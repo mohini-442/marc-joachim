@@ -63,8 +63,8 @@ const Mjh = () => {
                     ))}
                 </div>
             </div>
-            <img src="/assets/images/flowerellipse.png" alt="flowerellipse" height={301} width={313} className="absolute top-[23%] right-0 z-[-1]  max-w-[160px]" />
-            <img src="/assets/images/flowerellipse2.png" alt="flowerellipse" height={301} width={313} className="absolute bottom-[-9%] left-0 z-[-1] max-w-[160px]" />
+            <Image src="/assets/images/flowerellipse.png" alt="flowerellipse" height={301} width={313} className="absolute top-[23%] right-0 z-[-1]  max-w-[160px]" />
+            <Image src="/assets/images/flowerellipse2.png" alt="flowerellipse" height={301} width={313} className="absolute bottom-[-9%] left-0 z-[-1] max-w-[160px]" />
         </div>
     )
 }

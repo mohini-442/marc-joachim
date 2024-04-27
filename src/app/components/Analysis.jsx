@@ -67,7 +67,7 @@ const Analysis = () => {
                                             <p className='text-base sm:text-lg font-poppins font-semibold text-white capitalize text-center'>{data.heading}</p>
                                             <p className='text-base sm:text-lg font-poppins font-semibold text-white capitalize text-center'>{data.head}</p>
                                             <p className='font-normal text-sm sm:text-base font-poppins text-white sm:max-w-[364px] text-center sm:pt-3'>{data.para}</p>
-                                            <img src="/assets/images/sliderellipse.png" alt="sliderellipse" className='absolute bottom-0 right-0 z-[-1]' />
+                                            <Image src="/assets/images/sliderellipse.png" alt="sliderellipse" className='absolute bottom-0 right-0 z-[-1]' />
                                         </div>
                                     </div>
                                 </SwiperSlide>
