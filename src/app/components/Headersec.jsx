@@ -1,7 +1,6 @@
 "use client"
 import React, { useState } from 'react';
 import logo from '../../../public/assets/svg/logo.svg';
-import buttonsvg from '../../../public/assets/svg/buttonsvg.svg'
 import Image from "next/image";
 import { Phnsvg } from "./Icons";
 import Button from './Button';
@@ -17,7 +16,7 @@ export default function Headersec() {
         <>
             <div className="h-[810px]  bg-herobg bg-right lg:bg-center bg-cover bg-no-repeat bg-size flex flex-col relative overflow-x-hidden after:w-full lg:after:w-0 after:h-full after:bg-[#EEC6A6] after:opacity-50 after:absolute">
                 <div className='relative z-10'>
-                    <div className="max-w-[1140px] mx-auto py-3 md:py-6 px-3">
+                    <div className="max-w-[1140px] 2xl:max-w-[1320px] mx-auto py-3 md:py-6 px-3">
                         <div className=" flex justify-between items-center ">
                             <a href=""><Image src={logo} className="max-lg:w-[80%] relative z-10" alt="logo" height={53} width={145} /></a>
                             <ul
@@ -63,7 +62,7 @@ export default function Headersec() {
                 </div>
                 <div className="relative z-[2] px-3 flex-grow justify-center flex flex-col">
                     <div>
-                        <div className='max-w-[1140px] mx-auto px-3'>
+                        <div className='max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3'>
                             <div className="flex flex-wrap">
                                 <div className="lg:w-1/2 w-full" data-aos="zoom-y-out" data-aos-delay="1800">
                                     <p className=" font-helv text-[#F77B0B] text-base md:text-lg font-semibold capitalize text-center lg:text-start">Marc joachim hubrich</p>

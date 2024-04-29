@@ -7,7 +7,7 @@ export default function Fault() {
     return (
         <>
             <div className="relative z-[2]">
-                <div className="max-w-[1140px] mx-auto px-3 pt-8 md:pt-20 lg:pt-44 relative">
+                <div className="max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 pt-8 md:pt-20 lg:pt-44 relative">
                     <div className="absolute top-[-26%] left-0 hidden lg:block">
                         <div className="relative">
                             <div className="flex items-center flex-col">
@@ -45,7 +45,7 @@ export default function Fault() {
 
                 </div>
                 <div className="bg-faultbg bg-cover max-md:h-[500px] overflow-y-scroll bg-size bg-center bg-no-repeat max-lg:py-8 max-lg:px-4 mt-4 md:mt-8">
-                    <div className="max-w-[1140px] mx-auto flex justify-end lg:pe-16">
+                    <div className="max-w-[1140px] 2xl:max-w-[1320px] mx-auto flex justify-end lg:pe-16">
                         <div className='flex flex-wrap  justify-center lg:justify-start'>
                             {myarray.map((data, index) => (
                                 <div key={index} >

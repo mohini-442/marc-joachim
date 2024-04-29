@@ -12,7 +12,7 @@ const Goal = () => {
                     </div>
                 </div>
                 <div className='bg-[#F2F8FF]'>
-                    <div className='max-w-[1140px] mx-auto px-3 '>
+                    <div className='max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 '>
                         <div className='py-7 md:py-10 lg:py-14'>
                             <div className='flex flex-wrap justify-center lg:justify-between'>
                                 <div className='w-[100px] hidden lg:block'></div>
@@ -57,3 +57,5 @@ const Goal = () => {
 }
 
 export default Goal
+
+

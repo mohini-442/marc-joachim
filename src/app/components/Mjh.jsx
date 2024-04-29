@@ -6,7 +6,7 @@ const Mjh = () => {
 
     return (
         <div className='relative z-[2]' id='benifits'>
-            <div className='max-w-[1140px] px-3 mx-auto pt-9 sm:pt-20 lg:pt-28 relative'>
+            <div className='max-w-[1140px] 2xl:max-w-[1320px] px-3 mx-auto pt-9 sm:pt-20 lg:pt-28 relative'>
                 <div className="absolute top-[-12%] right-0 hidden lg:block">
                     <div className="relative">
                         <div className="flex items-center flex-col">
