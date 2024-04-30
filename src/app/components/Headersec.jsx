@@ -14,7 +14,7 @@ export default function Headersec() {
     }
     return (
         <>
-            <div className="h-[810px]  bg-herobg bg-right lg:bg-center bg-cover bg-no-repeat bg-size flex flex-col relative overflow-x-hidden after:w-full lg:after:w-0 after:h-full after:bg-[#EEC6A6] after:opacity-50 after:absolute">
+            <div className="h-[650px] sm:h-[810px]  bg-herobg bg-right lg:bg-center bg-cover bg-no-repeat bg-size flex flex-col relative overflow-x-hidden after:w-full lg:after:w-0 after:h-full after:bg-[#EEC6A6] after:opacity-50 after:absolute">
                 <div className='relative z-10'>
                     <div className="max-w-[1140px] 2xl:max-w-[1320px] mx-auto py-3 md:py-6 px-3">
                         <div className=" flex justify-between items-center ">
